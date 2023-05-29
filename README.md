@@ -14,7 +14,8 @@
 
 ## Overview
 
-This app created in this project enables a user to get instant analysis of a WhatsApp Chat. The data used for this project does not include media files.
+This app created in this project enables a user to get instant analysis of a WhatsApp Chat. The data used for this project does not include media files.<br/><br/>
+
 <img src="img/whatsapp.png">
 
 ## Motivation
