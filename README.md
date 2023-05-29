@@ -22,7 +22,7 @@ A user will simply get the whatsapp group chat txt file and upload it into the w
 
 ## Motivation
 
-We often find ourselves joining or being added to numerous whatsapp chat groups and some time the number of unread chats can run up to hundreds or in some cases even more. This app can help a use to get the most relevant information(s) rather than manually skimming through a whoel lot of chats.
+We often find ourselves joining or being added to numerous whatsapp chat groups and some time the number of unread chats can run up to hundreds or in some cases even more. This app can help a use to get the most relevant information(s) rather than manually skimming through a whole lot of chats.
 
 ## Problem Solving Steps
 
@@ -53,3 +53,8 @@ The data for this project can be gotten from any whatsapp group chat. To get a w
 ## Deployment
 
 ## Future scope of project
+
+Much more analysis could be added for example; 
+* Which user gets the most replies?
+* Who is the most active user?
+* And many more...
