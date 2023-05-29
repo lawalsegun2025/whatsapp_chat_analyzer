@@ -1,4 +1,4 @@
-# WhatsApp Text Analyzer
+# WhatsApp Chat Analyzer
 
 ## Table of Content
 * [Overview](#overview)
@@ -14,6 +14,7 @@
 
 ## Overview
 
+This app created in this project enables a user to get instant analysis of a WhatsApp Chat.
 <img src="img/whatsapp.png">
 
 ## Motivation
