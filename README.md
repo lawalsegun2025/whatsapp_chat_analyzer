@@ -57,4 +57,5 @@ The data for this project can be gotten from any whatsapp group chat. To get a w
 Much more analysis could be added for example; 
 * Which user gets the most replies?
 * Who is the most active user?
-* And many more...
+
+And many more...
