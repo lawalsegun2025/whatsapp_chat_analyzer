@@ -14,6 +14,8 @@
 
 ## Overview
 
+<img src="img/whatsapp.png">
+
 ## Motivation
 
 ## Problem Solving Steps
