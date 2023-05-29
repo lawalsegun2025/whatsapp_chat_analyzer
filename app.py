@@ -18,3 +18,6 @@ if uploaded_file is not None:
 
     # sending file data to the preprocessing function for further functioning
     df = preprocess.preprocess(data)
+
+    # displaying the dataframe
+    ## st.datframe(df)
