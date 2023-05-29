@@ -14,7 +14,9 @@
 
 ## Overview
 
-This app created in this project enables a user to get instant analysis of a WhatsApp Chat. The data used for this project does not include media files.<br/><br/>
+This app created in this project enables a user to get instant analysis of a WhatsApp Chat. The data used for this project does not include media files.
+
+A user will simply get the whatsapp group chat txt file and upload it into the web app, and the app will display the overall analysis of the group.<br/><br/>
 
 <img src="img/whatsapp.png">
 
