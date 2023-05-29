@@ -20,6 +20,12 @@
 
 ## Problem Solving Steps
 
+1. Collecting the data of a chat or group chat and saving the txt file in the project folder.
+2. Preprocessing the text and extracting the important features.
+3. Plot graphs showcasing the analysis
+4. Integrating the analysis with the User Interface made using Streamlit. 
+5. Deploy the application on Heroku cloud service
+
 ## Source of Dataset
 
 ## Data Cleaning Techniques
