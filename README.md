@@ -14,10 +14,12 @@
 
 ## Overview
 
-This app created in this project enables a user to get instant analysis of a WhatsApp Chat.
+This app created in this project enables a user to get instant analysis of a WhatsApp Chat. The data used for this project does not include media files.
 <img src="img/whatsapp.png">
 
 ## Motivation
+
+We often find ourselves joining or being added to numerous whatsapp chat groups and some time the number of unread chats can run up to hundreds or in some cases even more. This app can help a use to get the most relevant information(s) rather than manually skimming through a whoel lot of chats.
 
 ## Problem Solving Steps
 
@@ -28,6 +30,14 @@ This app created in this project enables a user to get instant analysis of a Wha
 5. Deploy the application on Heroku cloud service
 
 ## Source of Dataset
+
+The data for this project can be gotten from any whatsapp group chat. To get a whatsapp gruop chat data, follow the steps listed below;
+
+* Move to the whatsapp chat group
+* At the top right click on the `three vertical column`
+* You will be presented with a drop down menu, click on `more`
+* Select `export`
+* Choose the option `without media files` (as this project work with data that did not include media files)
 
 ## Data Cleaning Techniques
 
