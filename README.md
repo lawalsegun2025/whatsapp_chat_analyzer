@@ -34,7 +34,7 @@ We often find ourselves joining or being added to numerous whatsapp chat groups 
 
 ## Source of Dataset
 
-The data for this project can be gotten from any whatsapp group chat. To get a whatsapp gruop chat data, follow the steps listed below;
+The data for this project can be gotten from any whatsapp group chat. To get a whatsapp group chat data, follow the steps listed below;
 
 * Move to the whatsapp chat group
 * At the top right click on the `three vertical column`
