@@ -30,3 +30,6 @@ if uploaded_file is not None:
 
     # organize in order
     user_list.sort()
+
+    # include overall. This is responsible for showcasing the overall chat analysis
+    user_list.insert(0, "overall")
