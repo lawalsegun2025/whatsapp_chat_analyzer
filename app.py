@@ -60,4 +60,25 @@ if uploaded_file is not None:
             st.header("Total Words")
             st.title(num_words)
 
+        with col_4:
+            st.header("Total Links Shared")
+            st.title(links)
 
+        # finding the most active users in the group
+        if selected_user == "Overall":
+
+            # dividing the front end into two columns
+            # 1st col for bar chat, 2nd col for users df chat count
+
+            st.title("Most Active Users")
+            active_count, new_df = stats.fetch_active_users(df)
+            fig, ax = plt.subplots()
+            col_1, col_2 = st.columns(2)
+
+            with col_1:
+                ax.bar(active_count.index, active_count.values, color="royalblue")
+                plt.xticks(rotation="vertical")
+                st.pyplot(fig)
+
+            with col_2:
+                st.dataframe(new_df)
