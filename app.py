@@ -28,5 +28,5 @@ if uploaded_file is not None:
     # remove the group notifications
     user_list.remove("Group Notification")
 
-    # organise in order
+    # organize in order
     user_list.sort()
