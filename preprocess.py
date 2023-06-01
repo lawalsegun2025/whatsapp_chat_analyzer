@@ -42,3 +42,20 @@ def preprocess(data):
     # Separate users number/name from users message
     users = []
     messages = []
+
+    # loop through the "user_messages" column
+    for message in df["user_messages"]:
+
+        # Split on the regex expression match."users name or number"
+        entry = re.split('([\w\W]+?):\s', message)
+
+        # very this message has a name/number
+        if entry[1:]:
+            users.append(entry[1])
+            messages.append(entry[2])
+
+        # else it is a "Group Notification"
+        else:
+            users.append("Group Notification")
+            messages.append(entry[0])
+
