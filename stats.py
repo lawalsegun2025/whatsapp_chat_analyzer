@@ -24,9 +24,14 @@ def fetch_stats(selected_user, df):
     # Get the number of media files shared
     media_omitted = df[df["Message"] == "<Media omitted>"]
 
-    # Get number of links shared
+    # Get number of links shared url's
     links = []
     for message in df["Message"]:
         links.extend(extract.find_urls(message))
 
     return num_messages, len(words), media_omitted.shape[0], len(links)
+
+# most avtive users (group level)
+
+def fetch_active_users(df):
+    pass

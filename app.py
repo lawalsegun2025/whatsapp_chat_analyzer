@@ -50,6 +50,14 @@ if uploaded_file is not None:
         # first phase is to showcase the basic stats like number of users,
         # number of messages,number of media shared and all,
         # so for that 4 columns are required
-        col1, col2, col3, col4 = st.columns(4)
+        col_1, col_2, col_3, col_4 = st.columns(4)
+
+        with col_1:
+            st.header("Total Messages")
+            st.title(num_messages)
+
+        with col_2:
+            st.header("Total Words")
+            st.title(num_words)
 
 
