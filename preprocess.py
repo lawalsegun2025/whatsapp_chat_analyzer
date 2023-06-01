@@ -73,3 +73,28 @@ def preprocess(data):
                             "date": "Date"})
     
     
+    # Extract the date without time
+    df['Only date'] = pd.to_datetime(df['Date']).dt.date
+
+    # Get only the Year
+    df['Year'] = pd.to_datetime(df['Date']).dt.year
+
+    # Get month number
+    df['Month_num'] = pd.to_datetime(df['Date']).dt.month
+
+    # Get name of month
+    df['Month'] = pd.to_datetime(df['Date']).dt.month_name()
+
+    # Get Day
+    df['Day'] = pd.to_datetime(df['Date']).dt.day
+
+    # Get name of Day
+    df['Day_name'] = pd.to_datetime(df['Date']).dt.day_name()
+
+    # Get hour
+    df['Hour'] = pd.to_datetime(df['Date']).dt.hour
+
+    # Get minutes
+    df['Minute'] = pd.to_datetime(df['Date']).dt.minute
+
+    return df
