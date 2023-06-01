@@ -21,3 +21,12 @@ if uploaded_file is not None:
 
     # displaying the dataframe
     ## st.datframe(df)
+
+    # get unique users 
+    user_list = df["User"].unique().tolist()
+
+    # remove the group notifications
+    user_list.remove("Group Notification")
+
+    # organise in order
+    user_list.sort()
