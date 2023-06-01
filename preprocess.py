@@ -66,5 +66,10 @@ def preprocess(data):
     # remove the traling "\n" and the end of each message
     df["message"] = df["message"].apply(lambda text: get_string(text))
 
-
-
+    # Drop and rename columns
+    df = df.drop(columns=["user_messages"])
+    df = df[["message", "date", "User"]]
+    df = df.rename(columns={"message": "Message", 
+                            "date": "Date"})
+    
+    
