@@ -34,4 +34,5 @@ def fetch_stats(selected_user, df):
 # most avtive users (group level)
 
 def fetch_active_users(df):
-    pass
+    
+    df = df[df["Users"] != "Group Notification"]
