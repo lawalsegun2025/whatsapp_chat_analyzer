@@ -35,3 +35,10 @@ def preprocess(data):
     # Apply the function that separates the time from the date
     df["message_date"] = df["message_date"].apply(
         lambda text: get_date_and_time(text))
+
+    # Let's rename the "message_date" solumn to "date"
+    df.rename(columns={"message_date": "date"}, inplace=True)
+
+    # Separate users number/name from users message
+    users = []
+    messages = []
