@@ -41,3 +41,15 @@ if uploaded_file is not None:
 
     st.title("WhatsApp Chat Analysis for " + selected_user)
     if st.sidebar.button("Show Analysis"):
+
+        # getting the stats of the selected user from the stats script
+        num_messages, num_words, media_ommited, links = stats.fetch_stats(
+            selected_user, df
+        )
+
+        # first phase is to showcase the basic stats like number of users,
+        # number of messages,number of media shared and all,
+        # so for that 4 columns are required
+        col1, col2, col3, col4 = st.columns(4)
+
+
