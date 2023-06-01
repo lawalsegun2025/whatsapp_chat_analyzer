@@ -59,3 +59,12 @@ def preprocess(data):
             users.append("Group Notification")
             messages.append(entry[0])
 
+    # add the users and messages to new columns in he dataframe      
+    df["User"] = users
+    df["message"] = messages
+
+    # remove the traling "\n" and the end of each message
+    df["message"] = df["message"].apply(lambda text: get_string(text))
+
+
+
