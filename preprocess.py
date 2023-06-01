@@ -27,3 +27,11 @@ def preprocess(data):
 
     # Extracting only the date/time
     dates = re.findall(pattern, data)
+
+    # Create a dataframe with the extrated messages and dates
+    df = pd.DataFrame({"user_messages": messages, 
+                   "message_date": dates})
+    
+    # Apply the function that separates the time from the date
+    df["message_date"] = df["message_date"].apply(
+        lambda text: get_date_and_time(text))
