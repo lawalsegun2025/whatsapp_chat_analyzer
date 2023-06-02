@@ -114,3 +114,5 @@ def get_common_words(selected_user, wc_df):
 
     most_common_df = pd.DataFrame(Counter(words).most_common(20)).sort_values(1)
     return most_common_df
+
+# Get Emojis
