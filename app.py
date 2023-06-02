@@ -86,6 +86,8 @@ if uploaded_file is not None:
 
         # Word Cloud
         st.title("Word Cloud")
+
+        # Get dataframe without "<Media omitted>"
         wc_df = df[df["Message"] != "<Media omitted>"]
         df_img = stats.create_word_cloud(selected_user, wc_df)
         fig, ax = plt.subplots()
