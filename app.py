@@ -80,7 +80,7 @@ if uploaded_file is not None:
             col_1, col_2 = st.columns(2)
 
             with col_1:
-                ax.bar(active_count.index, active_count.values, color="royalblue")
+                ax.bar(active_count.index, active_count.values)
                 plt.xticks(rotation="vertical")
                 st.pyplot(fig)
 
@@ -98,7 +98,7 @@ if uploaded_file is not None:
         ax.axis("off")
         st.pyplot(fig)
 
-        # Most Common words
+        # Most Common words in the chat
         most_common_df = stats.get_common_words(selected_user, wc_df)
         fig, ax = plt.subplots()
         ax.barh(most_common_df[0], most_common_df[1])
