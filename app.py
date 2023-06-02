@@ -11,8 +11,8 @@ st.sidebar.title("Whatsapp Chat Analyzer")
 # upload a file
 uploaded_file = st.sidebar.file_uploader("choose a file")
 
-
-# key = st.sidebar.radio("Time Frrmat", ('12hr', '24hr', 'custom'))
+# select the time format 12hr or 24hr
+# key = st.sidebar.radio("Time Format", ('12hr', '24hr', 'custom'))
 
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
