@@ -82,3 +82,6 @@ if uploaded_file is not None:
 
             with col_2:
                 st.dataframe(new_df)
+
+        # Word Cloud
+        
