@@ -41,3 +41,23 @@ def fetch_active_users(df):
     # new_df = pd.DataFrame(((df["User"].value_counts()/df.shape[0]) * 100).round(2))
     new_df = pd.DataFrame(df["User"].value_counts()).rename(columns={"User":"posts"})
     return count, new_df
+
+
+
+
+def create_word_cloud(selected_user, wc_df):
+
+    if selected_user != "Overall":
+
+        wc_df = wc_df[wc_df["User"] == selected_user]
+    
+    # create word cloud object
+    wc = WordCloud(width=1000, height=500, min_font_size=10, 
+                   background_color="white")
+    
+    # generate wordcloud image
+    wc = wc.generate(wc_df["Message"].str.cat(sep=" "))
+
+    return wc
+
+# get most common words as a dataframe
