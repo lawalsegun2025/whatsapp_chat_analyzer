@@ -3,6 +3,7 @@ import preprocess
 import re 
 import stats 
 import matplotlib.pyplot as plt 
+import pandas as pd
 import numpy as np 
 
 st.sidebar.title("Whatsapp Chat Analyzer")
@@ -84,4 +85,11 @@ if uploaded_file is not None:
                 st.dataframe(new_df)
 
         # Word Cloud
-        
+        st.title("Word Cloud")
+        wc_df = df[df["Message"] != "<Media omitted>"]
+        df_img = stats.create_word_cloud(selected_user, wc_df)
+        fig, ax = plt.subplots()
+        ax.imshow(df_img)
+        st.pyplot(fig)
+
+        # Most Common words
