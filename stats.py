@@ -36,3 +36,7 @@ def fetch_stats(selected_user, df):
 def fetch_active_users(df):
     
     df = df[df["Users"] != "Group Notification"]
+    count = df["User"].value_counts().head()
+
+    new_df = pd.DataFrame((df["User"].value_counts()/df.shape[0]) * 100)
+    return count, new_df
