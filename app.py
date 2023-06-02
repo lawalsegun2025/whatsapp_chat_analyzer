@@ -11,6 +11,9 @@ st.sidebar.title("Whatsapp Chat Analyzer")
 # upload a file
 uploaded_file = st.sidebar.file_uploader("choose a file")
 
+
+# key = st.sidebar.radio("Time Frrmat", ('12hr', '24hr', 'custom'))
+
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
 
@@ -92,6 +95,15 @@ if uploaded_file is not None:
         df_img = stats.create_word_cloud(selected_user, wc_df)
         fig, ax = plt.subplots()
         ax.imshow(df_img)
+        ax.axis("off")
         st.pyplot(fig)
 
         # Most Common words
+        most_common_df = stats.get_common_words(selected_user, wc_df)
+        fig, ax = plt.subplots()
+        ax.barh(most_common_df[0], most_common_df[1])
+        plt.xticks(rotation="vertical")
+        st.title("Most Common Words")
+        st.pyplot(fig)
+
+        # Emoji Analysis
