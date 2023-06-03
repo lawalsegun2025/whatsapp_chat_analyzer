@@ -18,7 +18,7 @@ def preprocess(file, key):
         'custom': ''
     }
     
-    with open(file, 'r', encoding="utf8") as raw_data:
+    with open(file, 'r', encoding="utf-8") as raw_data:
         raw_string = ' '.join(raw_data.read().split('\n')) # converting the list split by newline char. as one whole string as there can be multi-line messages
         user_msg = re.split(split_formats[key], raw_string) [1:] # splits at all the date-time pattern, resulting in list of all the messages with user names
         date_time = re.findall(split_formats[key], raw_string) # finds all the date-time patterns
