@@ -4,6 +4,7 @@ seaborn
 wordcloud
 pandas
 emoji
+nltk
 collection
 urlextract
 idna
