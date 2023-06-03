@@ -116,3 +116,18 @@ def get_common_words(selected_user, wc_df):
     return most_common_df
 
 # Get Emojis
+def get_emoji_stats(selected_user, df):
+
+    if selected_user != "Overall":
+        df = df[df["User"] == selected_user]
+
+    # Extract all emojis and extend to list
+    emojis = []
+    for message in df["Message"]:
+        emojis.extend([c for c in message if c in emoji.EMOJI_DATA.keys()])
+        
+    emoji_df = pd.DataFrame(Counter(emojis).most_common())
+
+    return emoji_df
+
+# Get mothly time line
