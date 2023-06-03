@@ -123,4 +123,13 @@ if uploaded_file is not None:
         emoji_df["Percentage use"] = np.array(per_list).round(2)
         st.dataframe(emoji_df)
 
-        # Monthly time line
+        # Monthly timeline
+        st.title("Monthly Timeline")
+        monthly_df = stats.monthly_timeline(selected_user, df)
+        fig, ax = plt.subplots()
+        ax.plot(monthly_df["monthly_timeline"], monthly_df["Message"], color="green")
+        plt.xticks(rotation="vertical")
+        plt.tight_layout()
+        st.pyplot(fig)
+
+        # Activity maps
