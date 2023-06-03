@@ -112,15 +112,15 @@ if uploaded_file is not None:
 
         st.title("Emoji Analysis")
 
-        col_1, col_2 = st.columns(2)
+        # col_1, col_2 = st.columns(2)
 
-        with col_1:
-            st.dataframe(emoji_df)
+        # with col_1:
+        #     st.dataframe(emoji_df)
 
-        with col_2:
-            emoji_count = list(emoji_df["Count"])
-            per_list = [(i/sum(emoji_count))*100 for i in emoji_count]
-            emoji_df["Percentage use"] = np.array(per_list).round(2)
-            st.dataframe(emoji_df)
+        # with col_2:
+        emoji_count = list(emoji_df["Count"])
+        per_list = [(i/sum(emoji_count))*100 for i in emoji_count]
+        emoji_df["Percentage use"] = np.array(per_list).round(2)
+        st.dataframe(emoji_df)
 
         # Monthly time line
