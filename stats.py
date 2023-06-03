@@ -14,6 +14,7 @@ punct = string.punctuation
 
 extract = URLExtract()
 
+
 def fetch_stats(selected_user, df):
 
     # if the selected user is a specific user,then make changes in the 
@@ -68,6 +69,7 @@ def create_word_cloud(selected_user, wc_df):
 
     return wc
 
+
 # get most common words as a dataframe
 
 # Clean text
@@ -115,6 +117,7 @@ def get_common_words(selected_user, wc_df):
     most_common_df = pd.DataFrame(Counter(words).most_common(20)).sort_values(1)
     return most_common_df
 
+
 # Get Emojis
 def get_emoji_stats(selected_user, df):
 
@@ -130,5 +133,20 @@ def get_emoji_stats(selected_user, df):
 
     return emoji_df
 
+
 # Get mothly time line
 def monthly_timeline(selected_user, df):
+
+    if selected_user != "Overall":
+        df = df[df["User"] == selected_user]
+
+    # group year and month
+    monthly_df = df.groupby(["Year", "Month_num", "Month"]).count()["Message"].reset_index()
+
+    monthly_timeline = []
+    for i in range(monthly_df.shape[0]):
+        monthly_timeline.append(monthly_df["Month"][i]+"-"+str(monthly_df["Year"][i]))
+
+    monthly_df["monthly_timeline"] = monthly_timeline
+
+    return monthly_df
