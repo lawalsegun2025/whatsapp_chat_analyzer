@@ -124,12 +124,38 @@ if uploaded_file is not None:
         st.dataframe(emoji_df)
 
         # Monthly timeline
-        st.title("Monthly Timeline")
+        st.title("Monthly Number of Messages")
         monthly_df = stats.monthly_timeline(selected_user, df)
         fig, ax = plt.subplots()
-        ax.plot(monthly_df["monthly_timeline"], monthly_df["Message"], color="green")
+        ax.plot(monthly_df["monthly_timeline"], monthly_df["Message"])
         plt.xticks(rotation="vertical")
         plt.tight_layout()
         st.pyplot(fig)
 
         # Activity maps
+        st.title("Activity Map")
+
+        col_1, col_2 = st.columns(2)
+
+        with col_1:
+
+            st.header("Most Active Day")
+
+            active_day = stats.week_activity_map(selected_user, df)
+
+            fig, ax = plt.subplots()
+            ax.bar(active_day.index, active_day.values, color="purple")
+            plt.xticks(rotation="vertical")
+            plt.tight_layout()
+            st.pyplot(fig)
+
+        with col_2:
+
+            st.header("Most Active Month")
+            active_month = stats.month_activity_map(selected_user, df)
+
+            fig, ax = plt.subplots()
+            ax.bar(active_month.index, active_month.values, color="orange")
+            plt.xticks(rotation="vertical")
+            plt.tight_layout()
+            st.pyplot(fig)
