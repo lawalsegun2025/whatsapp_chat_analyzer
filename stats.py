@@ -131,3 +131,4 @@ def get_emoji_stats(selected_user, df):
     return emoji_df
 
 # Get mothly time line
+def monthly_timeline(selected_user, df):
