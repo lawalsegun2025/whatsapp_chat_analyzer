@@ -150,3 +150,20 @@ def monthly_timeline(selected_user, df):
     monthly_df["monthly_timeline"] = monthly_timeline
 
     return monthly_df
+
+# Days with most messages
+def week_activity_map(selected_user, df):
+
+    if selected_user != "Overall":
+        df =df[df["User"] == selected_user]
+
+    return df["Day_name"].value_counts()
+
+# Months with most messages
+def month_activity_map(selected_user, df):
+    
+    if selected_user != "Overall":
+        df =df[df["User"] == selected_user]
+
+
+    return df["Month"].value_counts()
