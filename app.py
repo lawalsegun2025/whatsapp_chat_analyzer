@@ -9,19 +9,19 @@ import numpy as np
 st.sidebar.title("Whatsapp Chat Analyzer")
 
 # upload a file
-uploaded_file = st.sidebar.file_uploader("choose a file")
+file = st.sidebar.file_uploader("choose a file")
 
 # select the time format 12hr or 24hr
-# key = st.sidebar.radio("Time Format", ('12hr', '24hr', 'custom'))
+key = st.sidebar.radio("Time Format", ('12hr', '24hr', 'custom'))
 
-if uploaded_file is not None:
-    bytes_data = uploaded_file.getvalue()
+if file is not None:
+    # bytes_data = file.getvalue()
 
     # converting the bytecode to the text-file
-    data = bytes_data.decode("utf-8")
+    # data = bytes_data.decode("utf-8")
 
     # sending file data to the preprocessing function for further functioning
-    df = preprocess.preprocess(data)
+    df = preprocess.preprocess(file, key)
 
     # displaying the dataframe
     ## st.datframe(df)
@@ -63,6 +63,10 @@ if uploaded_file is not None:
         with col_2:
             st.header("Total Words")
             st.title(num_words)
+
+        with col_3:
+            st.header("Media Shared")
+            st.title(media_ommited)
 
         with col_4:
             st.header("Total Links Shared")
