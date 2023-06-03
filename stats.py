@@ -1,6 +1,6 @@
 from urlextract import URLExtract
 import pandas as pd 
-from collection import Counter 
+from collections import Counter 
 from wordcloud import WordCloud
 import emoji
 import re
