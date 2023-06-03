@@ -1,8 +1,16 @@
 streamlit
 matplotlib
 seaborn
-urlextract
 wordcloud
 pandas
 emoji
 collection
+urlextract
+idna
+uritools
+pytest
+platformdirs
+bump2version
+filelock
+dnspython
+black
