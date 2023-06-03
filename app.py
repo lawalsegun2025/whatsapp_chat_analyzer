@@ -107,3 +107,20 @@ if uploaded_file is not None:
         st.pyplot(fig)
 
         # Emoji Analysis
+        emoji_df = start.get_emoji_stats(selected_user, df)
+        emoji_df.columns = ["Emoji", "Count"]
+
+        st.title("Emoji Analysis")
+
+        col_1, col_2 = st.columns(2)
+
+        with col_1:
+            st.dataframe(emoji_df)
+
+        with col_2:
+            emoji_count = list(emoji_df["Count"])
+            per_list = [(i/sum(emoji_count))*100 for i in emoji_count]
+            emoji_df["Percentage use"] = np.array(per_list)
+            st.dataframe(emoji_df)
+
+        # Monthly time line
