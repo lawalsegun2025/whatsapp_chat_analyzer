@@ -15,13 +15,13 @@ file = st.sidebar.file_uploader("choose a file")
 key = st.sidebar.radio("Time Format", ('12hr', '24hr', 'custom'))
 
 if file is not None:
-    # bytes_data = file.getvalue()
+    bytes_data = file.getvalue()
 
     # converting the bytecode to the text-file
-    # data = bytes_data.decode("utf-8")
+    data = bytes_data.decode("utf-8")
 
     # sending file data to the preprocessing function for further functioning
-    df = preprocess.preprocess(file, key)
+    df = preprocess.preprocess(data, key)
 
     # displaying the dataframe
     ## st.datframe(df)

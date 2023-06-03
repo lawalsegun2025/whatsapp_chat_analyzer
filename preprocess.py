@@ -5,7 +5,7 @@ import pandas as pd
 import re 
 
 
-def preprocess(file, key):
+def preprocess(data, key):
 
     split_formats = {
         '12hr' : '\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s[APap][mM]\s-\s',
@@ -18,12 +18,12 @@ def preprocess(file, key):
         'custom': ''
     }
     
-    with open(file, 'r', encoding="utf-8") as raw_data:
-        raw_string = ' '.join(raw_data.read().split('\n')) # converting the list split by newline char. as one whole string as there can be multi-line messages
-        user_msg = re.split(split_formats[key], raw_string) [1:] # splits at all the date-time pattern, resulting in list of all the messages with user names
-        date_time = re.findall(split_formats[key], raw_string) # finds all the date-time patterns
-        
-        df = pd.DataFrame({'Date': date_time, 'user_msg': user_msg}) # exporting it to a df
+
+    raw_string = ' '.join(data.split('\n')) # converting the list split by newline char. as one whole string as there can be multi-line messages
+    user_msg = re.split(split_formats[key], raw_string) [1:] # splits at all the date-time pattern, resulting in list of all the messages with user names
+    date_time = re.findall(split_formats[key], raw_string) # finds all the date-time patterns
+    
+    df = pd.DataFrame({'Date': date_time, 'user_msg': user_msg}) # exporting it to a df
         
     # converting date-time pattern which is of type String to type datetime,
     # format is to be specified for the whole string where the placeholders are extracted by the method 
