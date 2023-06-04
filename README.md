@@ -124,6 +124,21 @@ def preprocessing(file, key):
 
 ## Exploratory Data Analysis
 
+The following analysis were carried out on the text data
+
+### Numerical Analysis
+These includes;
+* Total Number of messages in the chat
+* Total number of words in the chat
+* Total number of media files shared in the chat
+* Total number of links in the chat
+* Most active users
+
+### Word Cloud
+
+This displays the most common words in the chat.</br></br>
+<img scr="img/whatsapp_woordcloud.png">
+
 ## Deployment
 
 ## Future scope of project
