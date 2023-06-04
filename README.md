@@ -155,7 +155,7 @@ The number and types of emojis used in the chat was also analyzed.</br></br>
    <img src="img/emoji1.png">
  </div>
  <div class="column" align="right">
-   <img src="img/emoji1.png">
+   <img src="img/emoji2.png">
  </div>
 </div> 
 
