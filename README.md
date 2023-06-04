@@ -137,7 +137,7 @@ These includes;
 ### Word Cloud
 
 This displays the most common words in the chat.</br></br>
-<img scr="img/whatsapp_woordcloud.png">
+<img src="img/whatsapp_woordcloud.png">
 
 ## Deployment
 
