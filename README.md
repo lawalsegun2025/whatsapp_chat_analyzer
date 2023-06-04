@@ -1,6 +1,7 @@
 # WhatsApp Chat Analyzer
 
 ## Table of Content
+* [Demo](#demo)
 * [Overview](#overview)
 * [Motivation](#motivation)
 * [Problem Solving Steps](#problem-solving-steps)
@@ -8,6 +9,17 @@
 * [Data Preprocessing](#data-preprocessing)
 * [Exploratory Data Analysis](#exploratory-data-analysis)
 * [Future scope of project](#future-scope-of-project)
+
+## Demo
+
+
+
+
+
+https://github.com/lawalsegun2025/whatsapp_chat_analyzer/assets/94943377/b5850e9a-667b-4527-b454-a05bb57ef950
+
+
+
 
 ## Overview
 
