@@ -8,6 +8,7 @@
 * [Source of Dataset](#source-of-dataset)
 * [Data Preprocessing](#data-preprocessing)
 * [Exploratory Data Analysis](#exploratory-data-analysis)
+* [Deployment](#deployment)
 * [Future scope of project](#future-scope-of-project)
 
 ## Demo
@@ -162,6 +163,12 @@ A graph of the top 20 words in the chat was plotted against the number of occurr
 The number and types of emojis used in the chat was also analyzed.</br></br>
 
 ![alt-text-1](img/emoji1.png) ![alt-text-2](img/emoji2.png)
+
+## Deployment
+
+The web app was deployed on stremlit;
+
+https://lawalsegun2025-whatsapp-chat-analyzer-app-ybopat.streamlit.app/
 
 ## Future scope of project
 
