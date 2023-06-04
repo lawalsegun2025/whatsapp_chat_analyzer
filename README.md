@@ -46,7 +46,7 @@ The data for this project can be gotten from any whatsapp group chat. To get a w
 
 The file required for this project is a whatapp chat exported text file in `.txt` format. Therefore the data is a text data. The frollowing code was used to import and preprocess the text data into a pandas dataframe.
 
-```
+```python
 def preprocessing(file, key):
     split_formats = {
         '12hr' : '\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s[APap][mM]\s-\s',
