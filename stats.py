@@ -9,6 +9,7 @@ import nltk
 pd.set_option('display.max_colwidth', 100)
 
 stopwords = nltk.corpus.stopwords.words("english")
+# stopwords = nltk.download('stopwords')
 wn = nltk.WordNetLemmatizer()
 punct = string.punctuation
 
