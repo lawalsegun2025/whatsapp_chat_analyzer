@@ -50,7 +50,7 @@ The data for this project can be gotten from any whatsapp group chat. To get a w
 * At the top right click on the `three vertical column`
 * You will be presented with a drop down menu, click on `more`
 * Select `export`
-* Choose the option `without media files` (as this project work with data that did not include media files)
+* Choose the option `without media files` (as this project work with data that does not include media files)
 
 ## Data Preprocessing
 
