@@ -151,7 +151,7 @@ A graph of the top 20 words in the chat was ploted agaist the number of occuranc
 ### Number Emoji's used in the chat
 The number and types of emojis used in the chat was also analyzed.</br></br>
 <div class="row" >
- <div class="column" align="left>
+ <div class="column" align="left">
    <img src="img/emoji1.png">
  </div>
  <div class="column" align="right">
