@@ -7,10 +7,9 @@
 * [Source of Dataset](#source-of-dataset)
 * [Data Preprocessing](#data-preprocessing)
 * [Exploratory Data Analysis](#exploratory-data-analysis)
-* [Model Building](#model-building)
 * [Model Performance](#model-performance)
 * [Deployment](#deployment)
-* [Future scope of project](#future-scope)
+* [Future scope of project](#future-scope-of-project)
 
 ## Overview
 
@@ -44,7 +43,7 @@ The data for this project can be gotten from any whatsapp group chat. To get a w
 
 ## Data Preprocessing
 
-The file required for this project is a whatapp chat exported text file in `.txt` format. Therefore the data is a text data. The frollowing code was used to import and preprocess the text data into a pandas dataframe.
+The file required for this project is a whatapp chat exported text file in `.txt` format. Therefore the data is a text data. The frollowing code was used to import and preprocess the text data into a pandas dataframe.</br></br>
 
 ```python
 def preprocessing(file, key):
@@ -124,10 +123,6 @@ def preprocessing(file, key):
 ```
 
 ## Exploratory Data Analysis
-
-## Model Building
-
-## Model Performance
 
 ## Deployment
 
