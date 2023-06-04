@@ -166,9 +166,7 @@ The number and types of emojis used in the chat was also analyzed.</br></br>
 
 ## Deployment
 
-The web app was deployed on stremlit;
-
-https://lawalsegun2025-whatsapp-chat-analyzer-app-ybopat.streamlit.app/
+The web app was deployed on [streamlit](https://lawalsegun2025-whatsapp-chat-analyzer-app-0ebyeo.streamlit.app/);
 
 ## Future scope of project
 
