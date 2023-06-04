@@ -7,8 +7,6 @@
 * [Source of Dataset](#source-of-dataset)
 * [Data Preprocessing](#data-preprocessing)
 * [Exploratory Data Analysis](#exploratory-data-analysis)
-* [Model Performance](#model-performance)
-* [Deployment](#deployment)
 * [Future scope of project](#future-scope-of-project)
 
 ## Overview
@@ -150,16 +148,8 @@ A graph of the top 20 words in the chat was ploted agaist the number of occuranc
 
 ### Number Emoji's used in the chat
 The number and types of emojis used in the chat was also analyzed.</br></br>
-<div align="center >
- <div class="column" align="left">
-   <img src="img/emoji1.png">
- </div>
- <div class="column" align="right">
-   <img src="img/emoji2.png">
- </div>
-</div> 
 
-## Deployment
+![alt-text-1](img/emoji1.png) ![alt-text-2](img/emoji2.png)
 
 ## Future scope of project
 
