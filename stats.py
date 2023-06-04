@@ -91,7 +91,7 @@ def clean_text(text):
     text = text.split()
     
     # Remove stopwords
-    text = [word for word in text if word not in stopwords]
+    # text = [word for word in text if word not in stopwords]
     
     # lemmatize
     text = [wn.lemmatize(word) for word in text]
