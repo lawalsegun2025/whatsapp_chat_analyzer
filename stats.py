@@ -6,10 +6,13 @@ import emoji
 import re
 import string 
 import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 pd.set_option('display.max_colwidth', 100)
 
-# stopwords = nltk.corpus.stopwords.words("english")
-stopwords = nltk.download('stopwords')
+stopwords = nltk.corpus.stopwords.words("english")
+
 wn = nltk.WordNetLemmatizer()
 punct = string.punctuation
 
