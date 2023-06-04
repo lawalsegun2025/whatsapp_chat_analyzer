@@ -145,7 +145,7 @@ This displays the most common words in the chat.</br></br>
 
 A graph of the top 20 words in the chat was ploted agaist the number of occurances of the words.</br></br>
 <div align="center">
-    <img src="most_commo_words.png">
+    <img src="img/most_commo_words.png">
 </div>
 
 ## Deployment
