@@ -141,6 +141,13 @@ This displays the most common words in the chat.</br></br>
     <img src="img/whatsapp_woordcloud.png">
 </div>
 
+### Top 20 Words
+
+A graph of the top 20 words in the chat was ploted agaist the number of occurances of the words.</br></br>
+<div align="center">
+    <img src="most_commo_words.png">
+</div>
+
 ## Deployment
 
 ## Future scope of project
